@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333; /* Red/Orange */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .contact-container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #FF5733; /* Red/Orange */
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FF4500; /* Darker Red/Orange */
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+    </style>
+    <script type="text/javascript">
+        console.log("Script Loaded")
+
+        // Function to handle form submission
+        function handleForm(event) {
+            event.preventDefault();  // Prevent the form from submitting the traditional way
+            console.log("Form Submitted");
+            alert("Form Submitted");  // Display alert
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <div class="contact-container">
+        <h2>We'd love to hear from you!</h2>
+        <form onsubmit="handleForm(event)">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Foodies Inc. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>

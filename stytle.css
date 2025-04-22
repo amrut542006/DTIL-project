@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 1rem;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero {
+    background-color: #f7f7f7;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #FF4500;
+}
+
+.results {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.results h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.results li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.features, .footer {
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    color: #ddd;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
